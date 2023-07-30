@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAGUA company is a group of companies founded by the young billionaire Acheampong Felix Boakye popularily known as Klasique.">
+    <title>password generator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.js"></script>
+</head>
+<body>
+ 
+   <main>
+       <section class="container flex-parent-center mh-100 flex-column" id="review-section">
+            <h2 class="display-4 text-center">Password Generator</h2>
+            <div class="password-container">
+              <div class="password-header">
+                <div class="password text-wrap">
+                    <span id="password"></span>
+                    <button class="copy" id="copy">Copy</button>
+                </div>
+            </div>
+
+            <div class="password-body">
+
+            <div class="form-div">
+                <label class="text-capitalize" for="password-length">password legnth</label>
+                <input type="number" class="btn" id="password-length" min="8" max="30" value="10"/>
+            </div>
+            <div class="form-div">
+                <label class="text-capitalize" for="uppercase">include uppercase letters</label>
+                <input type="checkbox" id="uppercase"/>
+            </div>
+            <div class="form-div">
+                <label class="text-capitalize" for="lowercase">include lowercase letters </label>
+                <input type="checkbox" id="lowercase"/>
+            </div>
+            <div class="form-div">
+                <label class="text-capitalize" for="number">include numbers</label>
+                <input type="checkbox" id="number"/>
+            </div>
+            <div class="form-div">
+                <label class="text-capitalize" for="symbol">include symbols</label>
+                <input type="checkbox" id="symbol"/>
+            </div>
+            <button class="generate text-capitalize" id="generate">generate password</button>
+
+            </div>
+
+          </div>
+       </section>
+   </main>
+ 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

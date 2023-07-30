@@ -1,0 +1,130 @@
+:root {
+    --white: white;
+    --altwhite1: rgb(209, 203, 203);
+    --grey: rgb(141, 139, 139);
+    --opacblack2: rgb(0,0,0,.2);
+    --opacblack5: rgb(0,0,0,.5);
+    --navBarcolor: rgb(66, 65, 65);
+    --navBarColor2: rgb(8, 8, 8);
+    --navBarcolorOpac: rgba(5, 5, 0, .9);
+    --lightBlue: #3586ff;
+    --lightBlueOpac: rgba(53, 134, 255, .5);
+    --deepBlue: rgb(0,0,255);
+    --lightbluealt: #1670f0;
+    --fireyellowlight: #ffeb3b;
+    --fireorange: #ff8c3b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:hover {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* bootstrap added styles customize */
+.m-6 {margin: 5em;} .p6 {margin: 5em;}
+.mt-6 { margin-top: 5em;}.mr-6 { margin-right: 5em;}.mb-6 {margin-bottom: 5em;}.ml-6 {margin-left: 5em;}
+.pt-6 { padding-top: 5em;}.pr-6 { padding-right: 5em;}.pb-6 {padding-bottom: 5em;}.pl-6 {padding-left: 5em;}
+.p-0 {padding: 0!important;}
+.m-0 {margin: 0!important;}
+.flex-parent-center { display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+.mh-100 {min-height: 100vh;}
+.w-50 {width: 50%;}
+
+/*               body */
+body {
+    background: url(../images/animations/anime_5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(5, 5, 0, .4);
+    background-blend-mode: multiply;
+
+}
+/*               end of body */
+.drawing-board {
+    max-width: 100%;
+}
+canvas {
+    /* max-width: 100%; */
+    /* height: 60%; */
+    border: 1px solid var(--lightBlue);
+    background: white;
+}
+
+.toolbar {
+    width: 100%;
+    background: var(--deepBlue);
+    padding: .5rem;
+    display: flex;
+}
+.toolbar > * {
+    width: 1.875em;
+    height: 1.875em;
+    color: var(--deepBlue);
+    font-weight: bold;
+    background: white;
+    border: none;
+    margin: .2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    -moz-transition: .4s;
+}
+.toolbar button:hover,
+.toolbar button:focus {
+    color: var(--lightBlue);
+} 
+.toolbar > *:last-child {
+    margin-left: auto;
+}
+#clear {
+    position: relative;
+}
+#clear::before {
+    content: 'clear';
+    position: absolute;
+    top: -100%;
+    height: 100%;
+    width: 200%;
+    background: chartreuse;
+    opacity: 0;
+    transition: .4s;
+}
+#clear:hover::before,
+#clear:focus::before,
+#clear:active::before {
+    opacity: 1;
+    color: var(--deepBlue);
+}
+#size {
+    padding: .29em 0 0 0;
+}
+#color {
+    position: relative;
+}
+#color::before {
+    content: 'color picker';
+    position: absolute;
+    text-align: center;
+    top: -100%;
+    height: 100%;
+    width: 310%;
+    white-space: nowrap;
+    background: chartreuse;
+    opacity: 0;
+    transition: .4s;
+}
+#color:hover::before,
+#color:focus::before,
+#color:active::before {
+    opacity: 1;
+    color: var(--deepBlue);
+}

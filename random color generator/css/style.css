@@ -1,0 +1,43 @@
+:root {
+    --white: white;
+    --altwhite1: rgb(209, 203, 203);
+    --grey: rgb(141, 139, 139);
+    --opacblack2: rgb(0,0,0,.2);
+    --opacblack5: rgb(0,0,0,.5);
+    --navBarcolor: rgb(66, 65, 65);
+    --navBarColor2: rgb(8, 8, 8);
+    --navBarcolorOpac: rgba(5, 5, 0, .9);
+    --lightBlue: #3586ff;
+    --deepBlue: rgb(0,0,255);
+    --lightbluealt: #1670f0;
+    --fireyellowlight: #ffeb3b;
+    --fireorange: #ff8c3b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:hover {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* bootstrap added styles customize */
+.m-6 {margin: 5em;} .p6 {margin: 5em;}
+.mt-6 { margin-top: 5em;}.mr-6 { margin-right: 5em;}.mb-6 {margin-bottom: 5em;}.ml-6 {margin-left: 5em;}
+.pt-6 { padding-top: 5em;}.pr-6 { padding-right: 5em;}.pb-6 {padding-bottom: 5em;}.pl-6 {padding-left: 5em;}
+.p-0 {padding: 0!important;}
+.m-0 {margin: 0!important;}
+.flex-parent-center { display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+.mh-100 {min-height: 100vh;}
+.w-50 {width: 50%;}
+
+/*               body */
+
+/*               end of body */
+
+  /*                footer section      */
+
+  /*                end of footer section      */

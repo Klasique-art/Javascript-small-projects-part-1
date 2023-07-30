@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAGUA company is a group of companies founded by the young billionaire Acheampong Felix Boakye popularily known as Klasique.">
+    <title>Earnwin music player 2 </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.js"></script>
+    </head>
+<body>
+    <div class="container body-container">
+        <div class="player-container shadow rounded pt-3" id="player-container" style="overflow: hidden;"> 
+
+            <div class="player-head pt-4 px-3 pb-5">
+                <div class="logo">
+                    <i class="fas fa-music"></i>
+                    <h3>EARNWIN <small style="font-weight: 100;">Music Player v2.0</small></h3>
+                </div>
+                <div class="music-nav">
+                    <span id="current-song-index"></span>
+                    <span>/</span>
+                    <span id="all-songs-number"></span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row py-4" style="overflow: hidden;">
+                    <!-- left part -->
+                    <div class="col-md-6 left-part pt-3">
+                        <div class="img-box mb-3">
+                            <img src="images/anime_1.jpg" alt="music image" id="song-img">
+                        </div>
+                        <div class="volume-items my-3 py-3">
+                            <span id="volume-number" class="flex-parent-center text-white"></span>
+                            <button class="button" id="mute">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            <input type="range" min="0" max="100" value="90" class="text-white" id="volume-control">
+                        </div>
+                    </div>
+                    <!-- right part -->
+                    <div class="col-md-6 right-part" style="overflow: hidden;">
+                        <div class="info-box m-0 w-100">
+                            <h2 class="text-center" id="song-name"></h2>
+                            <p id="artist-name" class="text-center"></p>
+                        </div>
+                        <div class="buttons-box mt-0 mt-3 mb-3 mb-sm-0">
+                            <button class="button" id="prev">
+                                <i class="fas fa-backward"></i>
+                            </button>
+                            <button class="button play-btn ml-2" id="play">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="button ml-2" id="next">
+                                <i class="fas fa-forward"></i>
+                            </button>
+                        </div>
+                        <button class="autoplay-toggle mb-3 mb-sm-0 mt-5" id="autoplay">
+                            Auto play <i class="fas fa-circle-notch"></i>
+                        </button>
+                        <input type="range" min="0" max="100" value="0" class="mt-5" id="music-slider">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

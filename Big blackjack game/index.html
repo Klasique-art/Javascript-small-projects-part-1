@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAGUA company is a group of companies founded by the young billionaire Acheampong Felix Boakye popularily known as Klasique.">
+    <title>Blackjack game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.js"></script>
+</head>
+<body class="text-white">
+    <!-- BJ stands for blackjack -->
+    <main class="text-center mh-100">
+        
+        <div class="container text-center">
+            <h6 class="display-4 font-weight-bold text-uppercase" style="color: goldenrod; margin: 0;"><small>Blackjack</small></h6>
+
+            <h2 class="font-weight-bold" id="result-display">Play</h4>
+            </div>
+            <div class="container text-white">
+                <div class="row mh-50 BJ-platform-container p-3 rounded">
+                    <div class="col-md-6 your-BJ-platform rounded p-3" id="your-BJ-platform">
+                        <h1>You: <strong><span class="font-weight-bold" id="your-result">0</span></strong></h1>
+                    </div>
+                    <div class="col-md-6 dealer-BJ-platform p-3 rounded" id="dealer-BJ-platform">
+                        <h2>Dealer: <span class="font-weight-bold" id="dealer-result">0</span></h2>
+                    </div>
+                </div>
+                <div class="row action-btns-container rounded" style="position: relative;">
+                    <h2 class="money bg-success"> $ <span id="money"></span> <br>
+                    <small><span id="money-msg"></span></small></h2>
+                    <div class="col d-flex justify-content-around">
+
+                        <div class="p-3 w-50 d-flex justify-content-center align-items-center" style="width: 100%;">
+                            <button class="btn btn-lg btn-primary mr-3" id="bj-hit-btn">Hit</button>
+                            <button class="btn btn-lg btn-warning mr-3" id="bj-stand-btn">Stand</button>
+                            <!-- <button class="btn-lg btn-danger" id="bj-deal-btn">Deal</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-dark">
+                    <div class="col d-flex justify-content-around flex-column align-items-center w-50">
+
+                        <table class="table table-hover w-50 text-white" style="font-size: 1.6rem;">
+                            <thead>
+                                <tr>
+                                    <th scope="row">Wins</th>
+                                    <th scope="row">Losses</th>
+                                    <th scope="row">Draws</th>
+                                </tr>
+                            </thead>
+                            <tr class="table-success text-dark">
+                                <td id="wins">0</td>
+                                <td id="losses">0</td>
+                                <td id="draws">0</td>
+                            </tr>
+                        </table>
+
+                        <table class="table text-white">
+                            <thead>
+                                <tr>
+                                    <th scope="row">Key</th>
+                                    <th scope="row">Action</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>H</td>
+                                <td>Hit</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>stand</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- rules of the game -->
+        <div class="container my-5">
+            <div class="accordion" id="rules">
+                <div class="card">
+
+                  <div class="card-header rule-button" id="gamerules" data-toggle="collapse" data-target="#rulecontent" aria-expanded="true" aria-controls="rulecontent">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h2 class="mb-0 display-4 font-weight-bold rule-of-bj" style="color: goldenrod;">Rules of blackjack</h2>
+                      </button>
+                  </div>
+            
+                  <div id="rulecontent" class="collapse show bg-dark" aria-labelledby="gamerules" data-parent="#rules">
+                    <div class="card-body">
+                      Press Hit to draw a card. Keep drawing cards until you get a number closer to but not more than 21. If you get a number less than 21, you can press Stand to let the dealer (your opponent) play. If your cards sum up to a number more than 21, you bust (you lose) and the dealer plays. If the sum of your cards is exactly 21 (which is even higher than 21), then you get Blackjack. If you get blackjack and the dealer also gets blackjack, then it's a push (you draw). When playing blackjack, the one with the higher number wins. 
+                      <h6>You can press H to hit and also S (on the keyboard) to stand </h6>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of rules of the game -->
+
+    </main>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

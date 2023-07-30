@@ -1,0 +1,121 @@
+:root {
+    --bgColor: rgb(31, 14, 85);
+    --bgColorLight: rgb(101, 80, 168);
+    --lightBlue: rgb(82, 174, 236);
+    --grey: rgb(105, 101, 101);
+}
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: .5s;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+button,
+input[type="submit"] {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+button:active {
+    transform: scale(.9);
+}
+
+.tip-container {
+    background: var(--bgColor);
+    padding: 5rem 2rem;
+    color: white;
+    font-size: 2rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(2,2,2,.4);
+    width: 400px;
+}
+.input-wrapper {
+    width: 100%;
+    height: 3rem;
+    background: red;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    overflow: hidden;
+}
+label {
+    margin-bottom: 1rem;
+    display: block;
+}
+.input-wrapper input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 2rem;
+    font-size: 2rem;
+    background: var(--bgColorLight);
+    color: white;
+}
+.input-wrapper span {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    color: white; 
+}
+.people-total-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.people-box, .tot-per-pers-box {
+    display: flex;
+    flex-direction: column;
+}
+.people-box h4, .tot-per-pers-box h4 {
+    margin-bottom: 2rem;
+}
+.people-count-box {
+    display: flex;
+    align-items: center;
+}
+.people-count-box button,.people-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightBlue);
+    font-size: 3rem;
+}
+.people-num {
+    background: none;
+    font-weight: bold;
+}
+.tot-per-pers-box h2 {
+    text-align: right;
+}
+.calc-btn {
+    width: 100%;
+    display: block;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    color: white;
+    background-color: var(--lightBlue);
+    font-weight: bold;
+}

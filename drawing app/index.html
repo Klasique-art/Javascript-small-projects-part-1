@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAGUA company is a group of companies founded by the young billionaire Acheampong Felix Boakye popularily known as Klasique.">
+    <title>drawing app</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.js"></script>
+</head>
+<body>
+ 
+   <main>
+       <section class="container flex-parent-center flex-column mh-100" id="drawing-section">
+          <!--  drawing board -->
+          <div class="drawing-board">
+              <canvas id="canvas" height="500" width="500"></canvas>
+               <!-- toolbar -->
+               <div class="toolbar">
+                   <button id="decrease">
+                       <i class="fas fa-minus"></i>
+                   </button>
+                   <span id="size">15</span>
+                   <button id="increase">
+                       <i class="fas fa-plus"></i>
+                   </button>
+                   <input type="color" id="color">
+                   <button id="clear">
+                       <i class="fas fa-broom"></i>
+                   </button>
+                </div>
+            </div>
+           <!-- end of toolbar -->
+          <!-- end of drawing board-->
+       </section>
+   </main>
+ 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

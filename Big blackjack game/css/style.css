@@ -1,0 +1,102 @@
+:root {
+    --white: white;
+    --altwhite1: rgb(209, 203, 203);
+    --grey: rgb(141, 139, 139);
+    --opacblack2: rgb(0,0,0,.2);
+    --opacblack5: rgb(0,0,0,.5);
+    --navBarcolor: rgb(66, 65, 65);
+    --navBarColor2: rgb(8, 8, 8);
+    --navBarcolorOpac: rgba(5, 5, 0, .9);
+    --lightBlue: #3586ff;
+    --lightBlueOpac: rgba(53, 134, 255, .5);
+    --deepBlue: rgb(0,0,255);
+    --lightbluealt: #1670f0;
+    --fireyellowlight: #ffeb3b;
+    --fireorange: #ff8c3b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:hover {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* bootstrap added styles customize */
+.m-6 {margin: 5em;} .p6 {margin: 5em;}
+.mt-6 { margin-top: 5em;}.mr-6 { margin-right: 5em;}.mb-6 {margin-bottom: 5em;}.ml-6 {margin-left: 5em;}
+.pt-6 { padding-top: 5em;}.pr-6 { padding-right: 5em;}.pb-6 {padding-bottom: 5em;}.pl-6 {padding-left: 5em;}
+.p-0 {padding: 0!important;}
+.m-0 {margin: 0!important;}
+.flex-parent-center { display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+.mh-100 {min-height: 100vh;}
+.mh-90 {min-height: 90vh;}
+.mh-80 {min-height: 80vh;}
+.mh-70 {min-height: 70vh;}
+.mh-60 {min-height: 60vh;}
+.mh-50 {min-height: 50vh;}
+.w-50 {width: 50%;}
+/* BJ stands for blackjack */
+body {
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(24, 21, 21, 0.7);
+    background-blend-mode: multiply;
+}
+/* styling the black-jack front-end  */
+.BJ-platform-container {
+    background: radial-gradient(rgb(6, 88, 6),rgb(9, 97, 9),rgb(4, 71, 4),rgb(6, 32, 6));
+}
+.your-BJ-platform,
+.dealer-BJ-platform,
+.action-btns-container {
+    border: 2px solid rgb(241, 239, 239);
+}
+.action-btns-container {
+    background: radial-gradient(rgb(9, 161, 9),rgb(9, 97, 9),rgb(4, 71, 4),rgb(6, 32, 6));
+}
+
+.your-BJ-platform img,
+.dealer-BJ-platform img {
+    width: 20%;
+    margin: .6rem;
+}
+.money {
+    color: black;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(2, 97, 7)!important;
+}
+.rule-button {
+    background: radial-gradient(rgb(9, 161, 9),rgb(9, 97, 9),rgb(4, 71, 4),rgb(6, 32, 6));
+}
+
+@media screen and (max-width: 700px) {
+    .your-BJ-platform img,
+    .dealer-BJ-platform img {
+        height: 100px;
+    }
+    .money {
+        display: none;
+    }
+}
+@media screen and (max-width: 300px) {
+    .your-BJ-platform img,
+    .dealer-BJ-platform img {
+        height: 70px;
+    }
+    .rule-of-bj {
+        font-size: large;
+        font-weight: normal;
+    }
+}
+/* end of styling the black-jack front-end  */

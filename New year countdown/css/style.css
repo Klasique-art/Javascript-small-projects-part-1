@@ -1,0 +1,75 @@
+:root {
+    --black: rgb(7, 1, 27);
+    --lightBlue: rgba(182, 192, 245, .5);
+    --red: rgb(196, 7, 7);
+}
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: .5s;
+}
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+button,
+input[type="submit"] {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+button:active {
+    transform: scale(.9);
+}
+img {
+    max-width: 100%;
+}
+.title {
+    font-size: 3rem;
+    color: var(--red);
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+.timer-container,
+.watch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 6px rgba(7, 0, 0, .5);
+    padding: 1rem;
+    width: 500px;
+    margin: 2rem auto;
+    border-radius: 6px;
+    background: var(--lightBlue);
+    max-width: 100%;
+}
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+.time-text, .time {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.sec, .secs {
+    color: var(--red);
+}
+.am-pm {
+    font-size: 2rem;
+    color: rgb(41, 75, 63);
+}
